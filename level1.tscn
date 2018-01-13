@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://Entities/Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Entities/Turret.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Item.tscn" type="PackedScene" id=3]
 
 [node name="Level1" type="Node2D" index="0"]
 
@@ -33,6 +34,7 @@ SPEED = 100
 
 [node name="Camera2D" type="Camera2D" parent="Player" index="2"]
 
+position = Vector2( -1.10803, 0 )
 anchor_mode = 1
 rotating = false
 current = true
@@ -58,5 +60,15 @@ _sections_unfolded = [ "Drag Margin", "Editor", "Limit", "Smoothing" ]
 [node name="Turret" parent="." index="2" instance=ExtResource( 2 )]
 
 position = Vector2( 322.056, 152.922 )
+
+[node name="Item1" parent="." index="3" instance=ExtResource( 3 )]
+
+position = Vector2( 228.119, 222.131 )
+
+[node name="Item2" parent="." index="4" instance=ExtResource( 3 )]
+
+position = Vector2( 398.16, 293.381 )
+
+[connection signal="pickup" from="Item1" to="Player" method="item_pickup"]
 
 
