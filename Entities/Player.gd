@@ -63,7 +63,3 @@ func _process(delta):
 	#move_and_collide(Vector2(0, movement.y))
 	#position.x = clamp(position.x, 0, screensize.x)
 	#position.y = clamp(position.y, 0, screensize.y)
-
-func _on_Exit_unlocked():
-	print("Next Level")
-

@@ -63,6 +63,4 @@ position = Vector2( 610.065, 481.726 )
 
 [connection signal="shot" from="Turret" to="." method="game_over"]
 
-[connection signal="unlocked" from="Exit" to="Player" method="_on_Exit_unlocked"]
-
 

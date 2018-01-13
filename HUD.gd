@@ -8,3 +8,6 @@ func update_pickup_label(score):
 
 func game_over_notice():
 	$DeathLabel.show()
+	
+func next_level_notice(some_text):
+	$NextLevelLabel.text = some_text
