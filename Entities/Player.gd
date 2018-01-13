@@ -1,22 +1,45 @@
 extends KinematicBody2D
 
 export (int) var SPEED  # how fast the player will move (pixels/sec)
-var velocity = Vector2()  # the player's movement vector
-var screensize  # size of the game window
+var dead = false
+var dead_timer = 0.0
+var start_pos = Vector2(0, 0)
 
 func _ready():
-	screensize = get_viewport_rect().size
+	start_pos = position
+
+func kill():
+	$Sprite.frame = 3
+	
+func revive():
+	dead = false
+	position = start_pos
+	dead_timer = 0.0
 
 func _process(delta):
-	velocity = Vector2()
+	if dead:
+		dead_timer += delta
+		if dead_timer > 0.5:
+			revive()
+		return
+	
+	var velocity = Vector2()
 	if Input.is_action_pressed("ui_right"):
 		velocity.x += 1
+		$Sprite.frame = 1
+		$Sprite.flip_h = false
 	if Input.is_action_pressed("ui_left"):
 		velocity.x -= 1
+		$Sprite.frame = 1
+		$Sprite.flip_h = true
 	if Input.is_action_pressed("ui_down"):
 		velocity.y += 1
+		$Sprite.frame = 0
+		$Sprite.flip_h = false
 	if Input.is_action_pressed("ui_up"):
 		velocity.y -= 1
+		$Sprite.frame = 2
+		$Sprite.flip_h = false
 		
 	if velocity.length() > 0:
 		velocity = velocity.normalized() * SPEED
