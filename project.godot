@@ -23,6 +23,10 @@ window/size/test_height=540
 window/stretch/mode="viewport"
 window/stretch/aspect="keep"
 
+[editor_plugins]
+
+enabled=PoolStringArray( "vnen.tiled_importer" )
+
 [importer_defaults]
 
 texture={
