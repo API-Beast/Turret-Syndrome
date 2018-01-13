@@ -24,6 +24,10 @@ func _process(delta):
 	#else:
 		#$AnimatedSprite.stop()
 		
-	position += velocity * delta
+	#position += velocity * delta
+	var movement = velocity*delta
+	move_and_slide(velocity)
+	#move_and_collide(Vector2(movement.x, 0))
+	#move_and_collide(Vector2(0, movement.y))
 	#position.x = clamp(position.x, 0, screensize.x)
 	#position.y = clamp(position.y, 0, screensize.y)

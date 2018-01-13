@@ -1,50 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" tiledversion="1.1.1" orientation="orthogonal" renderorder="right-down" width="60" height="34" tilewidth="16" tileheight="16" infinite="0" nextobjectid="1">
- <tileset firstgid="1" name="tileset" tilewidth="16" tileheight="16" tilecount="100" columns="10">
-  <image source="../Sprites/tileset.png" width="160" height="160"/>
+<map version="1.0" tiledversion="1.1.1" orientation="orthogonal" renderorder="right-down" width="60" height="34" tilewidth="32" tileheight="32" infinite="0" nextobjectid="1">
+ <tileset firstgid="1" name="tileset" tilewidth="32" tileheight="32" tilecount="100" columns="10">
+  <image source="../Sprites/tileset.png" width="320" height="320"/>
   <tile id="2">
    <objectgroup draworder="index">
-    <object id="1" x="0.125" y="0.125" width="15.8125" height="15.8125"/>
+    <object id="1" x="0.125" y="0.125" width="31.6307" height="31.8125"/>
    </objectgroup>
   </tile>
   <tile id="12">
    <objectgroup draworder="index">
-    <object id="1" x="0.25" y="0.1875" width="15.5" height="15.5625"/>
+    <object id="1" x="0.25" y="0.1875" width="31.5" height="31.7443"/>
    </objectgroup>
   </tile>
   <tile id="13">
    <objectgroup draworder="index">
-    <object id="1" x="0.5625" y="5.875" width="15.125" height="10"/>
+    <object id="1" x="0.5625" y="5.875" width="31.6705" height="26.5455"/>
    </objectgroup>
   </tile>
   <tile id="14">
    <objectgroup draworder="index">
-    <object id="1" x="0.1875" y="6.4375" width="15.8125" height="9.4375"/>
+    <object id="1" x="0.1875" y="6.4375" width="31.267" height="25.4375"/>
    </objectgroup>
   </tile>
   <tile id="15">
    <objectgroup draworder="index">
-    <object id="1" x="0" y="3.25" width="15.875" height="12.75"/>
+    <object id="1" x="0" y="3.25" width="31.875" height="28.5682"/>
    </objectgroup>
   </tile>
   <tile id="22">
    <objectgroup draworder="index">
-    <object id="1" x="0.0625" y="0.125" width="15.875" height="14.75"/>
+    <object id="1" x="0.0625" y="0.125" width="31.5114" height="29.2955"/>
    </objectgroup>
   </tile>
   <tile id="23">
    <objectgroup draworder="index">
-    <object id="1" x="-0.125" y="0.3125" width="16.1875" height="14.4375"/>
+    <object id="1" x="-0.125" y="0.3125" width="31.8239" height="28.983"/>
    </objectgroup>
   </tile>
   <tile id="24">
    <objectgroup draworder="index">
-    <object id="1" x="-0.0625" y="0.125" width="16" height="14.625"/>
+    <object id="1" x="-0.0625" y="0.125" width="31.8182" height="27.7159"/>
    </objectgroup>
   </tile>
   <tile id="25">
    <objectgroup draworder="index">
-    <object id="1" x="-0.125" y="-0.125" width="15.875" height="14.875"/>
+    <object id="1" x="-0.125" y="-0.125" width="31.5114" height="29.4205"/>
    </objectgroup>
   </tile>
  </tileset>
