@@ -4,17 +4,26 @@ export (int) var SPEED  # how fast the player will move (pixels/sec)
 var dead = false
 var dead_timer = 0.0
 var start_pos = Vector2(0, 0)
+var num_picks = 0
 
 func _ready():
 	start_pos = position
 
 func kill():
 	$Sprite.frame = 3
+	dead = true
 	
 func revive():
 	dead = false
 	position = start_pos
 	dead_timer = 0.0
+	$Sprite.frame = 0
+	for node in get_tree().get_nodes_in_group("pickup"):
+		node.reset()
+
+func pickup_item(item):
+	num_picks += 1
+	HUD.update_pickup_label(num_picks)
 
 func _process(delta):
 	if dead:

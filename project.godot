@@ -14,6 +14,10 @@ config/name="Turret Syndrome"
 run/main_scene="res://level1.tscn"
 config/icon="res://Sprites/player.png"
 
+[autoload]
+
+HUD="*res://HUD.tscn"
+
 [display]
 
 window/size/width=480
@@ -47,6 +51,11 @@ texture={
 "stream": false,
 "svg/scale": 1.0
 }
+
+[layer_names]
+
+2d_physics/layer_1="terrain"
+2d_physics/layer_2="pickups"
 
 [rendering]
 
