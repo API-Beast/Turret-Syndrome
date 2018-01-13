@@ -7,7 +7,7 @@
 [ext_resource path="res://Entities/Item.tscn" type="PackedScene" id=5]
 [ext_resource path="res://Entities/Exit.tscn" type="PackedScene" id=6]
 
-[node name="Level1" type="Node2D"]
+[node name="Level1" type="Node2D" index="0"]
 
 script = ExtResource( 1 )
 
@@ -57,7 +57,15 @@ position = Vector2( 228.199, 123.131 )
 
 position = Vector2( 398.16, 293.381 )
 
-[node name="Exit" parent="." index="5" instance=ExtResource( 6 )]
+[node name="Item3" parent="." index="5" instance=ExtResource( 5 )]
+
+position = Vector2( 494.405, 76.8739 )
+
+[node name="Item4" parent="." index="6" instance=ExtResource( 5 )]
+
+position = Vector2( 310.164, 491.092 )
+
+[node name="Exit" parent="." index="7" instance=ExtResource( 6 )]
 
 position = Vector2( 610.065, 481.726 )
 
