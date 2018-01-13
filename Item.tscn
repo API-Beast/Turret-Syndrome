@@ -9,7 +9,7 @@ custom_solver_bias = 0.0
 radius = 10.0
 height = 37.5435
 
-[node name="Item" type="Area2D" index="0"]
+[node name="Item" type="Area2D"]
 
 scale = Vector2( 0.3, 0.3 )
 input_pickable = true
