@@ -1,10 +1,11 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://level1.gd" type="Script" id=1]
 [ext_resource path="res://Maps/level0.tmx" type="PackedScene" id=2]
 [ext_resource path="res://Entities/Player.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Entities/Turret.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Entities/Item.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Entities/Exit.tscn" type="PackedScene" id=6]
 
 [node name="Level1" type="Node2D"]
 
@@ -56,6 +57,12 @@ position = Vector2( 228.199, 123.131 )
 
 position = Vector2( 398.16, 293.381 )
 
+[node name="Exit" parent="." index="5" instance=ExtResource( 6 )]
+
+position = Vector2( 610.065, 481.726 )
+
 [connection signal="shot" from="Turret" to="." method="game_over"]
+
+[connection signal="unlocked" from="Exit" to="Player" method="_on_Exit_unlocked"]
 
 
