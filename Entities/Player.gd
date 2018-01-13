@@ -3,11 +3,9 @@ extends KinematicBody2D
 export (int) var SPEED  # how fast the player will move (pixels/sec)
 var velocity = Vector2()  # the player's movement vector
 var screensize  # size of the game window
-var pickups
 
 func _ready():
 	screensize = get_viewport_rect().size
-	pickups = 0
 
 func _process(delta):
 	velocity = Vector2()
@@ -29,7 +27,3 @@ func _process(delta):
 	position += velocity * delta
 	#position.x = clamp(position.x, 0, screensize.x)
 	#position.y = clamp(position.y, 0, screensize.y)
-
-
-func item_pickup():
-	pickups += 1

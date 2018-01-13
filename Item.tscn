@@ -9,7 +9,7 @@ custom_solver_bias = 0.0
 radius = 10.0
 height = 37.5435
 
-[node name="Item" type="Area2D"]
+[node name="Item" type="Area2D" index="0"]
 
 scale = Vector2( 0.3, 0.3 )
 input_pickable = true
@@ -31,8 +31,8 @@ texture = ExtResource( 2 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." index="1"]
 
-position = Vector2( -1.91217, 0 )
-scale = Vector2( 1.82891, 1 )
+position = Vector2( -1.71644, 0 )
+scale = Vector2( 2.82521, 1 )
 shape = SubResource( 1 )
 
 [connection signal="body_entered" from="." to="." method="_on_Item_body_entered"]
