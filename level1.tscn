@@ -13,6 +13,8 @@ script = ExtResource( 1 )
 
 [node name="level0" parent="." index="0" instance=ExtResource( 2 )]
 
+position = Vector2( -0.902527, 0 )
+
 [node name="Player" parent="." index="1" instance=ExtResource( 3 )]
 
 position = Vector2( 124.723, 93.5426 )
@@ -56,6 +58,8 @@ position = Vector2( 210.287, 228.615 )
 position = Vector2( 398.16, 293.381 )
 
 [node name="HUD" parent="." index="5" instance=ExtResource( 6 )]
+
+[connection signal="shot" from="Turret" to="." method="game_over"]
 
 [connection signal="pickup" from="Item1" to="." method="item_pickup"]
 

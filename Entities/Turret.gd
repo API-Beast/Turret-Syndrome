@@ -1,13 +1,14 @@
 extends StaticBody2D
 
-
+signal shot
 
 func _ready():
-	# Called every time the node is added to the scene.
-	# Initialization here
-	pass
+	print("Hello")
 
-#func _process(delta):
-#	# Called every frame. Delta is time since last frame.
-#	# Update game logic here.
-#	pass
+func _physics_process(delta):
+	var space_state = get_world_2d().get_direct_space_state()
+	# use global coordinates, not local to node
+	var result = space_state.intersect_ray( position, Vector2(position.x, position.y + 200), [self])
+	if (not result.empty()):
+		emit_signal("shot")
+		print("Hit at point: ",result.position)

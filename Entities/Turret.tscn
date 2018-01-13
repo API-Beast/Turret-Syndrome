@@ -41,8 +41,7 @@ _sections_unfolded = [ "Transform" ]
 
 enabled = true
 exclude_parent = true
-cast_to = Vector2( 0, 50 )
+cast_to = Vector2( 0, 250 )
 collision_mask = 1
-_sections_unfolded = [ "Visibility" ]
 
 

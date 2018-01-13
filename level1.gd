@@ -15,3 +15,7 @@ func _ready():
 func item_pickup():
 	pickups += 1
 	$HUD.update_pickup_label(pickups)
+
+func game_over():
+	$Player.hide()
+	$HUD.game_over_notice()
