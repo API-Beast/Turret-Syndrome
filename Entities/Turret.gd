@@ -21,8 +21,9 @@ func _physics_process(delta):
 		var collider = result["collider"]
 		if collider.has_method("kill"):
 			collider.kill()
+			if not $ShootAudio.playing:
+				$ShootAudio.play()
 		last_ray = result["position"]
-			
 	update()
 		#emit_signal("shot")
 		#print("Hit at point: ",result.position)

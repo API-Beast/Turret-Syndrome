@@ -12,6 +12,7 @@ func _ready():
 func kill():
 	$Sprite.frame = 3
 	dead = true
+	$DeathSound.play()
 	
 func revive():
 	dead = false

@@ -14,17 +14,17 @@
   </tile>
   <tile id="13">
    <objectgroup draworder="index">
-    <object id="1" x="0.5625" y="5.875" width="31.6705" height="26.5455"/>
+    <object id="1" x="0" y="20" width="32" height="12"/>
    </objectgroup>
   </tile>
   <tile id="14">
    <objectgroup draworder="index">
-    <object id="1" x="0.1875" y="6.4375" width="31.267" height="25.4375"/>
+    <object id="1" x="0" y="20" width="32" height="12"/>
    </objectgroup>
   </tile>
   <tile id="15">
    <objectgroup draworder="index">
-    <object id="1" x="0" y="3.25" width="31.875" height="28.5682"/>
+    <object id="2" x="0" y="20" width="32" height="12"/>
    </objectgroup>
   </tile>
   <tile id="22">

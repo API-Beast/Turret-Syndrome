@@ -6,7 +6,11 @@ path="res://.import/level0.tmx-2771f5aaafd8c0f25d8c1ad1f15077c1.scn"
 
 [deps]
 
-source_md5="ddfe2112f2ecc07f3375e060e0f2f723"
+source_file="res://Maps/level0.tmx"
+source_md5="e3af6405d98a94ef59500b83fe48ea48"
+
+dest_files=[ "res://.import/level0.tmx-2771f5aaafd8c0f25d8c1ad1f15077c1.scn" ]
+dest_md5="54d34388634713bae13ad447262f41ee"
 
 [params]
 

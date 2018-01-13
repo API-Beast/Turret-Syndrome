@@ -17,6 +17,7 @@ config/icon="res://Sprites/player.png"
 [autoload]
 
 HUD="*res://HUD.tscn"
+Music="*res://Music.tscn"
 
 [display]
 
