@@ -1,0 +1,23 @@
+[remap]
+
+importer="vnen.tiled_importer"
+type="PackedScene"
+path="res://.import/level3.tmx-ef793da29d611f0366ba0368cbd1e864.scn"
+
+[deps]
+
+source_file="res://Maps/level3.tmx"
+source_md5="0d8439476d16833c46bd9966a6f3265a"
+
+dest_files=[ "res://.import/level3.tmx-ef793da29d611f0366ba0368cbd1e864.scn" ]
+dest_md5="937522960d29c1efdd232b71d91b3a92"
+
+[params]
+
+custom_properties=true
+tile_metadata=false
+uv_clip=true
+image_flags=7
+embed_internal_images=false
+save_tiled_properties=false
+post_import_script=""

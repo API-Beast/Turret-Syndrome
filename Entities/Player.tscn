@@ -9,15 +9,15 @@
 custom_solver_bias = 0.0
 extents = Vector2( 15.6426, 7.93279 )
 
-[node name="Player" type="KinematicBody2D" index="0"]
+[node name="Player" type="KinematicBody2D"]
 
 input_pickable = false
-collision_layer = 1
+collision_layer = 5
 collision_mask = 1
 collision/safe_margin = 0.08
 script = ExtResource( 1 )
-_sections_unfolded = [ "Transform" ]
-SPEED = null
+_sections_unfolded = [ "Collision", "Transform" ]
+SPEED = 150
 
 [node name="Sprite" type="Sprite" parent="." index="0"]
 

@@ -2,18 +2,18 @@
 
 importer="vnen.tiled_importer"
 type="PackedScene"
-path="res://.import/level0.tmx-2771f5aaafd8c0f25d8c1ad1f15077c1.scn"
+path="res://.import/level1.tmx-ec6d942680297829dea095076e901b87.scn"
 
 [deps]
 
-source_md5="e3af6405d98a94ef59500b83fe48ea48"
+source_md5="5caed9bd5a09de1d3be5da274b52fb21"
 
 [params]
 
 custom_properties=true
 tile_metadata=false
 uv_clip=true
-image_flags=0
-embed_internal_images=true
+image_flags=7
+embed_internal_images=false
 save_tiled_properties=false
 post_import_script=""

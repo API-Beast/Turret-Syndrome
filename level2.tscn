@@ -1,0 +1,55 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://Maps/level2.tmx" type="PackedScene" id=1]
+[ext_resource path="res://Entities/Exit.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Entities/Turret.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Entities/Player.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Entities/Camera.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Entities/Item.tscn" type="PackedScene" id=6]
+
+[node name="level2" instance=ExtResource( 1 )]
+
+[node name="Node2D" type="Node2D" parent="." index="1"]
+
+[node name="Exit" parent="Node2D" index="0" instance=ExtResource( 2 )]
+
+position = Vector2( 485.237, 32.2694 )
+next_level = "level3.tscn"
+
+[node name="Turret" parent="Node2D" index="1" instance=ExtResource( 3 )]
+
+editor/display_folded = true
+position = Vector2( 452.702, 199.856 )
+
+[node name="AnimationPlayer" parent="Node2D/Turret" index="3"]
+
+playback_speed = 0.4
+
+[node name="Turret2" parent="Node2D" index="2" instance=ExtResource( 3 )]
+
+position = Vector2( 494.445, 268.609 )
+
+[node name="Player" parent="Node2D" index="3" instance=ExtResource( 4 )]
+
+position = Vector2( 530.664, 500.037 )
+
+[node name="Camera2D" parent="Node2D/Player" index="3" instance=ExtResource( 5 )]
+
+[node name="Item" parent="Node2D" index="4" instance=ExtResource( 6 )]
+
+position = Vector2( 83.7672, 473.027 )
+
+[node name="Item2" parent="Node2D" index="5" instance=ExtResource( 6 )]
+
+position = Vector2( 896.529, 468.116 )
+
+[node name="Item3" parent="Node2D" index="6" instance=ExtResource( 6 )]
+
+position = Vector2( 181.986, 62.9628 )
+
+[node name="Item4" parent="Node2D" index="7" instance=ExtResource( 6 )]
+
+position = Vector2( 830.232, 213.975 )
+
+
+[editable path="Node2D/Turret"]

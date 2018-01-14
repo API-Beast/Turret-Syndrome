@@ -1,6 +1,6 @@
 extends KinematicBody2D
 
-export (int) var SPEED  # how fast the player will move (pixels/sec)
+export var SPEED = 150
 var dead = false
 var dead_timer = 0.0
 var start_pos = Vector2(0, 0)
@@ -8,10 +8,13 @@ var num_picks = 0
 
 func _ready():
 	start_pos = position
+	HUD.update_pickup_label(0)
 
 func kill():
 	$Sprite.frame = 3
 	dead = true
+	num_picks = 0
+	HUD.update_pickup_label(0)
 	$DeathSound.play()
 	
 func revive():
